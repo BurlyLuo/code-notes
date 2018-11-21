@@ -4,20 +4,37 @@
 
 ## ☕Java
 
-### 🧠知识点（职业生涯需要学会的）
+### 🧠核心技术
 
-### 📕书籍学习
+### 🎨常用框架
 
-#### Java内存模型
+## 🔧工具
 
-- [基础](/MD/Java/MemoryModel/A.基础.md)
-- [重排序](/MD/Java/MemoryModel/B.重排序.md)
-
-#### Java8实战
+## Git
 
 TODO
 
-#### Spring实战第四版
+## Maven
+
+TODO
+
+## 📕书籍学习
+
+### Java内存模型
+
+- [基础](/MD/Java/MemoryModel/A.基础.md)
+- [重排序](/MD/Java/MemoryModel/B.重排序.md)
+- [顺序一致性](/MD/Java/MemoryModel/C.顺序一致性.md)
+- [VOLATILE](/MD/Java/MemoryModel/D.volatile.md)
+- 锁
+- FINAL
+- 总结
+
+### Java8实战
+
+TODO
+
+### Spring实战第四版
 
 TODO
 
@@ -27,7 +44,15 @@ TODO
 
 ## 📃算法
 
-## 💪实践项目
+### 常见算法
+
+一些常见的算法，面试常问，有印象的就记录一下
+
+- 冒泡排序
+- 选择排序
+- 二分查找
+
+## 💪我的项目
 
 TODO
 
