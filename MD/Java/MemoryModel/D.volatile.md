@@ -1,13 +1,13 @@
 # volatile
 
 - [volatile](#volatile)
-    - [volatile的特性](#volatile%E7%9A%84%E7%89%B9%E6%80%A7)
+    - [volatile 的特性](#volatile-%E7%9A%84%E7%89%B9%E6%80%A7)
     - [volatile 写-读建立的 happens-before 关系](#volatile-%E5%86%99-%E8%AF%BB%E5%BB%BA%E7%AB%8B%E7%9A%84-happens-before-%E5%85%B3%E7%B3%BB)
     - [volatile 写-读的内存语义](#volatile-%E5%86%99-%E8%AF%BB%E7%9A%84%E5%86%85%E5%AD%98%E8%AF%AD%E4%B9%89)
     - [volatile 内存语义的实现](#volatile-%E5%86%85%E5%AD%98%E8%AF%AD%E4%B9%89%E7%9A%84%E5%AE%9E%E7%8E%B0)
     - [JSR-133 为什么要增强 volatile 的内存语义](#jsr-133-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%A2%9E%E5%BC%BA-volatile-%E7%9A%84%E5%86%85%E5%AD%98%E8%AF%AD%E4%B9%89)
 
-## volatile的特性
+## volatile 的特性
 
 当我们声明共享变量为 volatile 后，对这个变量的读/写将会很特别。理解 volatile 特性的一个好方法是把对 volatile 变量的单个读/写，看成是使用同一个锁对这些单个读/写做了同步。下面我们通过具体的示例说明，请看下面的示例代码：
 
