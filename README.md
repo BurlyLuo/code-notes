@@ -22,15 +22,16 @@ TODO
 
 ## 📕书籍学习
 
-### Java内存模型
+### 深入理解 Java 内存模型
 
+- [读后汇总](/MD/Java/MemoryModel/读后汇总.md)
 - [基础](/MD/Java/MemoryModel/A.基础.md)
 - [重排序](/MD/Java/MemoryModel/B.重排序.md)
 - [顺序一致性](/MD/Java/MemoryModel/C.顺序一致性.md)
 - [VOLATILE](/MD/Java/MemoryModel/D.volatile.md)
 - [锁](/MD/Java/MemoryModel/E.锁.md)
-- FINAL
-- 总结
+- [FINAL](/MD/Java/MemoryModel/F.final.md)
+- [总结](/MD/Java/MemoryModel/G.总结.md)
 
 ### Java8实战
 
@@ -48,10 +49,15 @@ TODO
 
 ### 常见算法
 
-一些常见的算法，面试常问，有印象的就记录一下
+一些常见、简单的算法，面试常问，有印象的就记录一下
+
+排序篇：
 
 - 冒泡排序
 - 选择排序
+
+查找篇：
+
 - 二分查找
 
 ## 💪我的项目

@@ -1,6 +1,10 @@
 # 锁
 
 - [锁](#%E9%94%81)
+    - [锁的释放-获取建立的 happens-before 关系](#%E9%94%81%E7%9A%84%E9%87%8A%E6%94%BE-%E8%8E%B7%E5%8F%96%E5%BB%BA%E7%AB%8B%E7%9A%84-happens-before-%E5%85%B3%E7%B3%BB)
+    - [锁释放和获取的内存语义](#%E9%94%81%E9%87%8A%E6%94%BE%E5%92%8C%E8%8E%B7%E5%8F%96%E7%9A%84%E5%86%85%E5%AD%98%E8%AF%AD%E4%B9%89)
+    - [锁内存语义的实现](#%E9%94%81%E5%86%85%E5%AD%98%E8%AF%AD%E4%B9%89%E7%9A%84%E5%AE%9E%E7%8E%B0)
+    - [concurrent 包的实现](#concurrent-%E5%8C%85%E7%9A%84%E5%AE%9E%E7%8E%B0)
 
 ## 锁的释放-获取建立的 happens-before 关系
 
