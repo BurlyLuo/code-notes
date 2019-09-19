@@ -8,8 +8,6 @@
 
 ### 🎨常用框架
 
-### 🌈设计模式
-
 ## 🔧工具
 
 ### Git
@@ -20,25 +18,12 @@ TODO
 
 TODO
 
+## 🌈设计模式
+
 ## 🎫抄书
 
-### Java 内存模型
-
-《深入理解 Java 内存模型 - 程晓明著》
-
-书籍内容：
-
-- [基础](/MD/Java/MemoryModel/A.基础.md)
-- [重排序](/MD/Java/MemoryModel/B.重排序.md)
-- [顺序一致性](/MD/Java/MemoryModel/C.顺序一致性.md)
-- [VOLATILE](/MD/Java/MemoryModel/D.volatile.md)
-- [锁](/MD/Java/MemoryModel/E.锁.md)
-- [FINAL](/MD/Java/MemoryModel/F.final.md)
-- [总结](/MD/Java/MemoryModel/G.总结.md)
-
-个人
-
-- [读后汇总](/MD/Java/MemoryModel/读后汇总.md)
+- [《深入理解 Java 内存模型 - 程晓明著》](/MD/Java/MemoryModel/README.md)
+- [《Effective Java 中文版 第2版》](/MD/Java/EffectiveJava/README.md)
 
 ## 💡想法池
 
