@@ -129,8 +129,3 @@
 
 - 第2版 第21条：用函数对象表示策略
 - 第2版 第73条：避免使用线程组
-
-## 资源
-
-- [Effective Java 中文版第2版](/PDF/Effective-Java中文版-第2版.pdf)
-- [Effective Java 中文版第3版](/PDF/Effective-Java中文版-第2版.pdf)
