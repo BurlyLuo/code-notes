@@ -23,7 +23,7 @@ TODO
 ## 🎫抄书
 
 - [《深入理解 Java 内存模型 - 程晓明著》](/MD/Java/MemoryModel/README.md)
-- [《Effective Java 中文版 第2版》](/MD/Java/EffectiveJava/README.md)
+- [《Effective Java 中文版》](/MD/Java/EffectiveJava/README.md)
 
 ## 💡想法池
 
