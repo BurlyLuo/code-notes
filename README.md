@@ -34,7 +34,7 @@ TODO
 
 Java：
 
-- [JSR 有哪些？](/MD/idea/Java/JSR规范概况一览.md)
+- [JSR 有哪些？](/MD/idea/Java/JSR规范概览.md)
 - Java switch是如何支持 String 类型的？
 
 ## 📏算法
