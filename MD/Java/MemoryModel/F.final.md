@@ -1,13 +1,13 @@
 # final
 
 - [final](#final)
-    - [final域](#final%E5%9F%9F)
-    - [写 final 域的重排序规则](#%E5%86%99-final-%E5%9F%9F%E7%9A%84%E9%87%8D%E6%8E%92%E5%BA%8F%E8%A7%84%E5%88%99)
-    - [读 final 域的重排序规则](#%E8%AF%BB-final-%E5%9F%9F%E7%9A%84%E9%87%8D%E6%8E%92%E5%BA%8F%E8%A7%84%E5%88%99)
-    - [如果 final 域是引用类型](#%E5%A6%82%E6%9E%9C-final-%E5%9F%9F%E6%98%AF%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B)
-    - [为什么 final 引用不能从构造函数中"逸出"](#%E4%B8%BA%E4%BB%80%E4%B9%88-final-%E5%BC%95%E7%94%A8%E4%B8%8D%E8%83%BD%E4%BB%8E%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E4%B8%AD%22%E9%80%B8%E5%87%BA%22)
-    - [final 语义在处理器中的实现](#final-%E8%AF%AD%E4%B9%89%E5%9C%A8%E5%A4%84%E7%90%86%E5%99%A8%E4%B8%AD%E7%9A%84%E5%AE%9E%E7%8E%B0)
-    - [JSR-133 为什么要增强 final 语义](#jsr-133-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%A2%9E%E5%BC%BA-final-%E8%AF%AD%E4%B9%89)
+  - [final域](#final域)
+  - [写 final 域的重排序规则](#写-final-域的重排序规则)
+  - [读 final 域的重排序规则](#读-final-域的重排序规则)
+  - [如果 final 域是引用类型](#如果-final-域是引用类型)
+  - [为什么 final 引用不能从构造函数中"逸出"](#为什么-final-引用不能从构造函数中逸出)
+  - [final 语义在处理器中的实现](#final-语义在处理器中的实现)
+  - [JSR-133 为什么要增强 final 语义](#jsr-133-为什么要增强-final-语义)
 
 ## final域
 

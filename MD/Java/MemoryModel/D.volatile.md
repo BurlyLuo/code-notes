@@ -1,11 +1,11 @@
 # volatile
 
 - [volatile](#volatile)
-    - [volatile 的特性](#volatile-%E7%9A%84%E7%89%B9%E6%80%A7)
-    - [volatile 写-读建立的 happens-before 关系](#volatile-%E5%86%99-%E8%AF%BB%E5%BB%BA%E7%AB%8B%E7%9A%84-happens-before-%E5%85%B3%E7%B3%BB)
-    - [volatile 写-读的内存语义](#volatile-%E5%86%99-%E8%AF%BB%E7%9A%84%E5%86%85%E5%AD%98%E8%AF%AD%E4%B9%89)
-    - [volatile 内存语义的实现](#volatile-%E5%86%85%E5%AD%98%E8%AF%AD%E4%B9%89%E7%9A%84%E5%AE%9E%E7%8E%B0)
-    - [JSR-133 为什么要增强 volatile 的内存语义](#jsr-133-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%A2%9E%E5%BC%BA-volatile-%E7%9A%84%E5%86%85%E5%AD%98%E8%AF%AD%E4%B9%89)
+  - [volatile 的特性](#volatile-的特性)
+  - [volatile 写-读建立的 happens-before 关系](#volatile-写-读建立的-happens-before-关系)
+  - [volatile 写-读的内存语义](#volatile-写-读的内存语义)
+  - [volatile 内存语义的实现](#volatile-内存语义的实现)
+  - [JSR-133 为什么要增强 volatile 的内存语义](#jsr-133-为什么要增强-volatile-的内存语义)
 
 ## volatile 的特性
 
