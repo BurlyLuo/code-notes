@@ -1,4 +1,4 @@
-# java -cp & java jar的区别
+# java -cp & java -jar的区别
 
 ## java -cp
 
