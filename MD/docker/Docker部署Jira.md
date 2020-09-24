@@ -1,4 +1,4 @@
-# Docker安装Jira
+# Docker部署Jira
 
 官方镜像：[atlassian-jira-software](https://hub.docker.com/r/cptactionhank/atlassian-jira-software)
 

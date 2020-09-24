@@ -1,4 +1,4 @@
-# Docker安装Jenkins
+# Docker部署Jenkins
 
 官方镜像：[Jenkins](https://hub.docker.com/_/jenkins/)
 Jenkins镜像：[jenkins/jenkins](https://hub.docker.com/r/jenkins/jenkins)

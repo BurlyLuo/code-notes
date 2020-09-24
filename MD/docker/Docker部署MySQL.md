@@ -1,4 +1,4 @@
-# Docker安装MySQL
+# Docker部署MySQL
 
 官方Docker hub中的MySQL镜像地址：[MySQL镜像](https://hub.docker.com/_/mysql)
 

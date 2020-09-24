@@ -1,4 +1,4 @@
-# Docker安装RabbitMQ
+# Docker部署RabbitMQ
 
 官方镜像：[rabbitmq](https://hub.docker.com/_/rabbitmq)
 

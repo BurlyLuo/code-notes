@@ -1,4 +1,4 @@
-# Docker容器CPU、memory资源限制
+# Docker限制容器可用的内存与可用的CPU
 
 ## 限制容器可用的内存
 
@@ -73,15 +73,15 @@ Docker 提供的内存限制功能有以下几点：
 
 执行docker run命令时能使用的和内存限制相关的所有选项如下。
 
-|选项 | 描述|
-|---------|---------|
-|-m,--memory | 内存限制，格式是数字加单位，单位可以为 b,k,m,g。最小为 4M|
-|--memory-swap | 内存+交换分区大小总限制。格式同上。必须必-m设置的大|
-|--memory-reservation | 内存的软性限制。格式同上|
-|--oom-kill-disable | 是否阻止 OOM killer 杀死容器，默认没设置|
-|--oom-score-adj | 容器被 OOM killer 杀死的优先级，范围是[-1000, 1000]，默认为 0|
-|--memory-swappiness | 用于设置容器的虚拟内存控制行为。值为 0~100 之间的整数|
-|--kernel-memory | 核心内存限制。格式同上，最小为 4M|
+| 选项                 | 描述                                                          |
+| -------------------- | ------------------------------------------------------------- |
+| -m,--memory          | 内存限制，格式是数字加单位，单位可以为 b,k,m,g。最小为 4M     |
+| --memory-swap        | 内存+交换分区大小总限制。格式同上。必须必-m设置的大           |
+| --memory-reservation | 内存的软性限制。格式同上                                      |
+| --oom-kill-disable   | 是否阻止 OOM killer 杀死容器，默认没设置                      |
+| --oom-score-adj      | 容器被 OOM killer 杀死的优先级，范围是[-1000, 1000]，默认为 0 |
+| --memory-swappiness  | 用于设置容器的虚拟内存控制行为。值为 0~100 之间的整数         |
+| --kernel-memory      | 核心内存限制。格式同上，最小为 4M                             |
 
 ### 用户内存限制
 
@@ -239,13 +239,13 @@ Docker 的资源限制和隔离完全基于 Linux cgroups。对 CPU 资源的限
 
 docker run命令和 CPU 限制相关的所有选项如下：
 
-|选项 |描述|
-|---------|---------|
-|--cpuset-cpus="" |允许使用的 CPU 集，值可以为 0-3,0,1|
-|-c,--cpu-shares=0 |CPU 共享权值（相对权重）|
-|cpu-period=0 |限制 CPU CFS 的周期，范围从 100ms~1s，即[1000, 1000000]|
-|--cpu-quota=0 |限制 CPU CFS 配额，必须不小于1ms，即 >= 1000|
-|--cpuset-mems="" |允许在上执行的内存节点（MEMs），只对 NUMA 系统有效|
+| 选项              | 描述                                                    |
+| ----------------- | ------------------------------------------------------- |
+| --cpuset-cpus=""  | 允许使用的 CPU 集，值可以为 0-3,0,1                     |
+| -c,--cpu-shares=0 | CPU 共享权值（相对权重）                                |
+| cpu-period=0      | 限制 CPU CFS 的周期，范围从 100ms~1s，即[1000, 1000000] |
+| --cpu-quota=0     | 限制 CPU CFS 配额，必须不小于1ms，即 >= 1000            |
+| --cpuset-mems=""  | 允许在上执行的内存节点（MEMs），只对 NUMA 系统有效      |
 
 其中--cpuset-cpus用于设置容器可以使用的 vCPU 核。-c,--cpu-shares用于设置多个容器竞争 CPU 时，各个容器相对能分配到的 CPU 时间比例。--cpu-period和--cpu-quata用于绝对设置容器能使用 CPU 时间。
 

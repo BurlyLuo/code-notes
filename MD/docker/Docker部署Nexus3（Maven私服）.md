@@ -1,4 +1,4 @@
-# Docker搭建Maven私服
+# Docker部署Nexus3（Maven私服）
 
 Nexus3 Docker官网镜像地址：[sonatype/nexus3](https://hub.docker.com/r/sonatype/nexus3)
 

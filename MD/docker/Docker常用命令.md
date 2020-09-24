@@ -1,6 +1,7 @@
 # Docker常用命令
 
 官方命令文档：[Docker官网文档-Docker CLI](https://docs.docker.com/engine/reference/run/)
+
 官方命令文档：[Docker官网文档-Dockerfile reference](https://docs.docker.com/engine/reference/builder/)
 
 ## Docker核心概念
@@ -52,7 +53,7 @@ docker 镜像可以理解为，你在 win 下用 ghost 拷贝出来的磁盘镜�
 
 ![Docker命令结构图](../../IMG/docker/001.png)
 
-### Docker环境信息
+## Docker环境信息
 
 **info命令**：
 

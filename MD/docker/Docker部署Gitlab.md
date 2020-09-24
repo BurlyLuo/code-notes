@@ -1,4 +1,4 @@
-# Docker安装Gitlab
+# Docker部署Gitlab
 
 官方Docker hub中的Gitlab镜像地址：[gitlab-ce](https://hub.docker.com/r/gitlab/gitlab-ce)
 

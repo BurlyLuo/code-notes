@@ -1,4 +1,4 @@
-# Docker安装MongoDB
+# Docker部署MongoDB
 
 官方镜像地址：[mongo](https://hub.docker.com/_/mongo)
 

@@ -1,8 +1,8 @@
-# Docker安装Redis
+# Docker部署Redis
 
 官方Docker hub中的redis镜像地址：[redis镜像](https://hub.docker.com/_/redis)
 
-## 一、下载镜像
+## 下载镜像
 
 下载 redis 5.0.6 版本的镜像：
 
@@ -10,7 +10,7 @@
 docker pull redis:5.0.6-alpine3.10
 ```
 
-## 二、运行容器
+## 运行容器
 
 0.为Docker容器指定自定义网段的固定IP/静态IP地址
 
@@ -115,7 +115,7 @@ PONG
 127.0.0.1:6379> auth password
 ```
 
-## 三、主从配置
+## 主从配置
 
 1.新建master和slave角色的redis配置文件
 

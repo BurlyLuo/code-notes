@@ -1,4 +1,4 @@
-# Docker安装ZooKeeper
+# Docker部署ZooKeeper
 
 ZooKeeper官网：[zookeeper.apache.org](https://zookeeper.apache.org/)
 

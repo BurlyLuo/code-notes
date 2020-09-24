@@ -1,4 +1,4 @@
-# Docker搭建WordPress
+# Docker部署WordPress
 
 Docker官网镜像地址：[wordpress](https://hub.docker.com/_/wordpress)
 

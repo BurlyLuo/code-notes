@@ -1,6 +1,7 @@
-# Docker Compose 详解
+# Docker Compose说明
 
 官方文档：[Compose file reference](https://docs.docker.com/compose/compose-file/)
+
 Github项目地址：[docker / compose](https://github.com/docker/compose)
 
 ## 概述
@@ -15,10 +16,10 @@ docker-compose 是一个用来把 docker 自动化的东西。有了 docker-comp
 
 用通俗的语言来说，我们平时操作 docker 还是很原始的一系列动作，你手动使用 docker 的动作可以拆分成
 
-1. 找到一个系统镜像 // docker search
-1. 安装好 vm 或者 virtual box // apt-get install docker
-1. 在 vm 中安装镜像 // docker run -d -it 你的镜像
-1. 略..
+* 找到一个系统镜像 // docker search
+* 安装好 vm 或者 virtual box // apt-get install docker
+* 在 vm 中安装镜像 // docker run -d -it 你的镜像
+* 略..
 
 这是最小的动作， 如果你要映射硬盘，设置nat网络或者桥接网络，等等…你就要做更多的 docker 操作， 这显然是非常没有效率的。
 
@@ -137,6 +138,7 @@ docker-compose -h|--help
 
 **Commands**:
 
+```bash
 - build              Build or rebuild services
 - bundle             Generate a Docker bundle from the Compose file
 - config             Validate and view the compose file
@@ -162,6 +164,7 @@ docker-compose -h|--help
 - unpause            Unpause services
 - up                 Create and start containers
 - version            Show the Docker-Compose version information
+```
 
 -f ：指定docker-compose.yml文件，默认是docker-compose.yml，当一条命令有多个-f参数时，会做替换操作
 -p ：指定docker-compose的项目目录，也就是docker-compose.yml文件的存储目录
@@ -845,5 +848,5 @@ docker-compose rm nginx
 
 ## 参考
 
-- [不正宗 docker 入门教程-使用 docker-compose](https://segmentfault.com/a/1190000015706722)
-- [Docker：Docker Compose 详解](https://www.jianshu.com/p/658911a8cff3)
+* [不正宗 docker 入门教程-使用 docker-compose](https://segmentfault.com/a/1190000015706722)
+* [Docker：Docker Compose 详解](https://www.jianshu.com/p/658911a8cff3)
