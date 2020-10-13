@@ -2,14 +2,20 @@
 
 记录我的程序员生涯，中心思想是：学习、记录、分享。
 
-## ☕Java
+## 🧠知识点
 
-### 🧠知识点
+### ☕Java
 
 - [JSR规范概览](/MD/Java/base/JSR规范概览.md)
 - [java -cp & java -jar的区别](/MD/Java/base/java%20-cp%20&%20java%20-jar的区别.md)
 
-### 🎨常用框架
+## 🌈设计模式
+
+- [设计模式](MD/DesignPattern/README.md)
+
+## 💡想法池
+
+- [ ] Java switch 是如何支持 String 类型的？
 
 ## 🔧工具
 
@@ -49,17 +55,6 @@
 - [Docker部署WordPress](/MD/docker/Docker部署WordPress.md)
 - [Docker部署ZooKeeper](/MD/docker/Docker部署ZooKeeper.md)
 
-## 🌈设计模式
-
-## 🎫抄书
-
-- [《深入理解 Java 内存模型 - 程晓明著》](/MD/Java/MemoryModel/README.md)
-- [《Effective Java 中文版》](/MD/Java/EffectiveJava/README.md)
-
-## 💡想法池
-
-- [ ] Java switch 是如何支持 String 类型的？
-
 ## 📏算法
 
 ### 常见算法
@@ -80,13 +75,19 @@
 
 - [ ] 二分查找
 
+## 🎫抄书
+
+- [《深入理解 Java 内存模型 - 程晓明著》](/MD/Java/MemoryModel/README.md)
+
 ## 🔗我的项目
 
 nothing...
 
-## 📕技术书籍/文档
+## 📕技术文档/开源书籍
 
 - Spring 官方文档：[《Spring Framework Documentation》](https://docs.spring.io/spring/docs/current/spring-framework-reference/)
+- 一部以“架构师应该掌握哪些架构知识”为叙事主线的开源文档：[软件架构探索：The Fenix Project](https://icyfenix.cn/)
+- 技术面试必备的基础知识：[CS-Notes](https://cyc2018.github.io/CS-Notes)
 
 ## 🎈说明
 
