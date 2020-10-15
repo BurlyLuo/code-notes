@@ -16,7 +16,7 @@ java -cp .;d:\work\other.jar;d:\work\my.jar packname.mainclassname
 **linux环境示例**：
 
 ```bash
-java -cp .:/hone/myuser/work/other.jar:/hone/myuser/work/my.jar packname.mainclassname
+java -cp .:/home/myuser/work/other.jar:/home/myuser/work/my.jar packname.mainclassname
 ```
 
 **表达式支持通配符**:
