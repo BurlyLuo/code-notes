@@ -20,7 +20,7 @@
 
 1995 年，艾瑞克·伽马（ErichGamma）、理査德·海尔姆（Richard Helm）、拉尔夫·约翰森（Ralph Johnson）、约翰·威利斯迪斯（John Vlissides）等 4 位作者合作出版了《设计模式：可复用面向对象软件的基础》（Design Patterns: Elements of Reusable Object-Oriented Software）一书，在本教程中收录了 23 个设计模式，这是设计模式领域里程碑的事件，导致了软件设计模式的突破。这 4 位作者在软件开发领域里也以他们的“四人组”（Gang of Four，GoF）匿名著称。
 
-直到今天，狭义的设计模式还是本教程中所介绍的 23 种经典设计模式。
+直到今天，狭义的设计模式还是书中所介绍的 23 种经典设计模式。
 
 ## 设计模式的分类
 
@@ -128,48 +128,48 @@
 
 创建型模式
 
-- [ ] 简单工厂模式（Simple Factory Pattern）
-- [ ] 工厂方法模式（Factory Method Pattern）
-- [ ] 抽象工厂模式（Abstract Factory Pattern）
-- [ ] 建造者模式（Builder Pattern）
-- [ ] 单例模式（Singleton Pattern）
-- [ ] 原型模式（Prototype Pattern）
+- [简单工厂模式（Simple Factory Pattern）](/MD/DesignPattern/SimpleFactory/SimpleFactory.md)
+- 工厂方法模式（Factory Method Pattern）
+- 抽象工厂模式（Abstract Factory Pattern）
+- 建造者模式（Builder Pattern）
+- 单例模式（Singleton Pattern）
+- 原型模式（Prototype Pattern）
 
 行为型模式
 
-- [ ] 命令模式（Command Pattern）
-- [ ] 中介者模式（Mediator Pattern）
-- [ ] 观察者模式（Observer Pattern）
-- [ ] 状态模式（State Pattern）
-- [ ] 策略模式（Strategy Pattern）
-- [ ] 职责链模式（Chain of Responsibility Pattern）
-- [ ] 解释器模式（Interpreter Pattern）
-- [ ] 迭代器模式（Iterator Pattern）
-- [ ] 备忘录模式（Memento Pattern）
-- [ ] 模板方法模式（Template Method Pattern）
-- [ ] 访问者模式（Visitor Pattern）
-- [ ] 空对象模式（Null Object Pattern）
+- 命令模式（Command Pattern）
+- 中介者模式（Mediator Pattern）
+- 观察者模式（Observer Pattern）
+- 状态模式（State Pattern）
+- 策略模式（Strategy Pattern）
+- 职责链模式（Chain of Responsibility Pattern）
+- 解释器模式（Interpreter Pattern）
+- 迭代器模式（Iterator Pattern）
+- 备忘录模式（Memento Pattern）
+- 模板方法模式（Template Method Pattern）
+- 访问者模式（Visitor Pattern）
+- 空对象模式（Null Object Pattern）
 
 结构型模式
 
-- [ ] 适配器模式（Adapter Pattern）
-- [ ] 桥接模式（Bridge Pattern）
-- [ ] 装饰模式（Decorator Pattern）
-- [ ] 外观模式（Facade Pattern）
-- [ ] 享元模式（Flyweight Pattern）
-- [ ] 代理模式（Proxy Pattern）
-- [ ] 组合模式（Composite Pattern）
+- 适配器模式（Adapter Pattern）
+- 桥接模式（Bridge Pattern）
+- 装饰模式（Decorator Pattern）
+- 外观模式（Facade Pattern）
+- 享元模式（Flyweight Pattern）
+- 代理模式（Proxy Pattern）
+- 组合模式（Composite Pattern）
 
 J2EE 模式
 
-- [ ] MVC 模式（MVC Pattern）
-- [ ] 业务代表模式（Business Delegate Pattern）
-- [ ] 组合实体模式（Composite Entity Pattern）
-- [ ] 数据访问对象模式（Data Access Object Pattern）
-- [ ] 前端控制器模式（Front Controller Pattern）
-- [ ] 拦截过滤器模式（Intercepting Filter Pattern）
-- [ ] 服务定位器模式（Service Locator Pattern）
-- [ ] 传输对象模式（Transfer Object Pattern）
+- MVC 模式（MVC Pattern）
+- 业务代表模式（Business Delegate Pattern）
+- 组合实体模式（Composite Entity Pattern）
+- 数据访问对象模式（Data Access Object Pattern）
+- 前端控制器模式（Front Controller Pattern）
+- 拦截过滤器模式（Intercepting Filter Pattern）
+- 服务定位器模式（Service Locator Pattern）
+- 传输对象模式（Transfer Object Pattern）
 
 ## 资料
 
