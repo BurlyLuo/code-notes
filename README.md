@@ -76,23 +76,24 @@
 
 排序篇：
 
-- [ ] 冒泡排序
-- [ ] 选择排序
-- [ ] 快速排序
-- [ ] 插入排序
-- [ ] 归并排序
-- [ ] 堆排序
-- [ ] 桶排序
+- 冒泡排序
+- 选择排序
+- 快速排序
+- 插入排序
+- 归并排序
+- 堆排序
+- 桶排序
 
 查找篇：
 
-- [ ] 二分查找
+- 二分查找
 
 ## 📕技术文档/开源书籍
 
 - Spring 官方文档：[《Spring Framework Documentation》](https://docs.spring.io/spring/docs/current/spring-framework-reference/)
 - 一部以“架构师应该掌握哪些架构知识”为叙事主线的开源文档：[软件架构探索：The Fenix Project](https://icyfenix.cn/)
 - 技术面试必备的基础知识：[CS-Notes](https://cyc2018.github.io/CS-Notes)
+- 《On Java 8》中文版，是事实上的《Java 编程思想》第5版：[On Java 8](https://lingcoder.github.io/OnJava8)
 
 ## 🎫抄书
 
