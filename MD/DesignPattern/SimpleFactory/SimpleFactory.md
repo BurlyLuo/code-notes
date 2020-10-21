@@ -1,4 +1,4 @@
-# 简单工厂（Simple Factory）
+# 简单工厂模式（Simple Factory Pattern）
 
 ## Intent
 
