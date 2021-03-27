@@ -36,7 +36,7 @@ java -cp .:/home/myuser/work/lib/my.jar:/home/myuser/work/dependency_jars/*.jar 
 java -jar my.jar
 ```
 
-执行该命令时，会用到目录`META-INF\MANIFEST.MF`文件，在该文件中，有一个叫`Main－Class`的参数，它说明了java -jar命令执行的类。
+执行该命令时，会用到目录`META-INF\MANIFEST.MF`文件，在该文件中，有一个叫`Main-Class`的参数，它定义jar文件的入口类，该类必须是一个可执行的类，一旦定义了该属性即可通过 `java -jar my.jar`来运行该jar文件。
 
 java -jar方式不可以指定附加依赖jar包。
 

@@ -1,4 +1,4 @@
-# Spring Boot中加载自定义的yaml文件
+# Spring Boot项目加载自定义的yaml文件
 
 在 Spring Boot 项目中`resource`目录下创建一个`simple.yml`文件
 
