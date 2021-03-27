@@ -1,6 +1,6 @@
 # 装饰模式（Decorator Pattern）
 
-## Intent
+## 意图
 
 动态地给一个对象增加一些额外的职责(Responsibility)，就增加对象功能来说，装饰模式比生成子类实现更为灵活。
 
@@ -30,7 +30,7 @@
 
 当不能采用继承的方式对系统进行扩充或者采用继承不利于系统扩展和维护时。不能采用继承的情况主要有两类：第一类是系统中存在大量独立的扩展，为支持每一种组合将产生大量的子类，使得子类数目呈爆炸性增长；第二类是因为类定义不能继承（如final类）。
 
-## Class Diagram
+## 类图
 
 装饰模式主要包含以下角色
 
@@ -41,7 +41,7 @@
 
 ![Decorator](/DesignPattern/Decorator/Decorator.png)
 
-## Implementation
+## 实现代码
 
 ```java
 public class DecoratorPattern {

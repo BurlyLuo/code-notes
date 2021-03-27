@@ -1,6 +1,6 @@
 # 策略模式（Strategy Pattern）
 
-## Intent
+## 意图
 
 定义了一系列算法，并将每个算法封装起来，使它们可以相互替换，且算法的变化不会影响使用算法的客户。
 
@@ -32,7 +32,7 @@
 - 系统要求使用算法的客户不应该知道其操作的数据时，可使用策略模式来隐藏与算法相关的数据结构。
 - 多个类只区别在表现行为不同，可以使用策略模式，在运行时动态选择具体要执行的行为。
 
-## Class Diagram
+## 类图
 
 策略模式的主要角色如下
 
@@ -42,7 +42,7 @@
 
 ![Strategy](/DesignPattern/Strategy/Strategy.png)
 
-## Implementation
+## 实现代码
 
 ```java
 public class StrategyPattern {

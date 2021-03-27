@@ -1,4 +1,4 @@
-# 备忘录模式（Memento Pattern）
+# 单例模式（Singleton Pattern）
 
 ## 意图
 

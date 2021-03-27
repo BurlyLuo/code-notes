@@ -1,17 +1,31 @@
-# 工厂方法模式（Factory Method Pattern）
+# 简单工厂模式（Simple Factory Pattern）
 
-## Intent
+## 意图
+
+TODO
 
 ## 优缺点
 
 **优点：**
 
+TODO
+
 **缺点：**
+
+TODO
 
 ## 应用场景
 
-## Class Diagram
+TODO
 
-## Implementation
+## 类图
+
+TODO
+
+## 实现代码
+
+TODO
 
 ## 模式应用
+
+TODO

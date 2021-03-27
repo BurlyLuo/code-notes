@@ -1,6 +1,8 @@
 # 设计模式
 
-## 概述
+[TOC]
+
+## 设计模式概述
 
 设计模式（Design Pattern）是前辈们对代码开发经验的总结，是解决特定问题的一系列套路。
 
@@ -39,14 +41,45 @@
 - 类模式：用于处理类与子类之间的关系，这些关系通过继承来建立，是静态的，在编译时刻便确定下来了。
 - 对象模式：用于处理对象之间的关系，这些关系可以通过组合或聚合来实现，在运行时刻是可以变化的，更具动态性。
 
-### GoF 的 23 种设计模式的分类表
+## 设计模式列表
 
-| 范围\目的 | 创建型模式                   | 结构型模式                                        | 行为型模式                                                       |
-| --------- | ---------------------------- | ------------------------------------------------- | ---------------------------------------------------------------- |
-| 类模式    | 工厂方法                     | (类）适配器                                       | 模板方法、解释器                                                 |
-| 对象模式  | 单例、原型、抽象工厂、建造者 | 代理、(对象）适配器、桥接、装饰、外观、享元、组合 | 策略、命令、职责链、状态、观察者、中介者、迭代器、访问者、备忘录 |
+创建型模式
 
-## 设计模式的设计原则
+- [x] [简单工厂模式（Simple Factory Pattern）](/DesignPattern/SimpleFactory/SimpleFactory.md)
+- [ ] [工厂方法模式（Factory Method Pattern）](/DesignPattern/FactoryMethod/FactoryMethod.md)
+- [ ] [抽象工厂模式（Abstract Factory Pattern）](/DesignPattern/AbstractFactory/AbstractFactory.md)
+- [ ] [建造者模式（Builder Pattern）](/DesignPattern/Builder/Builder.md)
+- [ ] [单例模式（Singleton Pattern）](/DesignPattern/Singleton/Singleton.md)
+- [ ] [原型模式（Prototype Pattern）](/DesignPattern/Prototype/Prototype.md)
+
+结构型模式
+
+- [ ] [适配器模式（Adapter Pattern）](/DesignPattern/Adapter/Adapter.md)
+- [ ] [桥接模式（Bridge Pattern）](/DesignPattern/Bridge/Bridge.md)
+- [ ] [组合模式（Composite Pattern）](/DesignPattern/Composite/Composite.md)
+- [x] [装饰器模式（Decorator Pattern）](/DesignPattern/Decorator/Decorator.md)
+- [ ] [外观模式（Facade Pattern）](/DesignPattern/Facade/Facade.md)
+- [ ] [享元模式（Flyweight Pattern）](/DesignPattern/Flyweight/Flyweight.md)
+- [ ] [代理模式（Proxy Pattern）](/DesignPattern/Proxy/Proxy.md)
+
+行为型模式
+
+- [ ] [责任链模式（Chain of Responsibility Pattern）](/DesignPattern/ChainOfResponsibility/ChainOfResponsibility.md)
+- [ ] [命令模式（Command Pattern）](/DesignPattern/Command/Command.md)
+- [ ] [解释器模式（Interpreter Pattern）](/DesignPattern/Interpreter/Interpreter.md)
+- [ ] [迭代器模式（Iterator Pattern）](/DesignPattern/Iterator/Iterator.md)
+- [ ] [中介者模式（Mediator Pattern）](/DesignPattern/Mediator/Mediator.md)
+- [ ] [备忘录模式（Memento Pattern）](/DesignPattern/Memento/Memento.md)
+- [ ] [观察者模式（Observer Pattern）](/DesignPattern/Observer/Observer.md)
+- [ ] [状态模式（State Pattern）](/DesignPattern/State/State.md)
+- [x] [策略模式（Strategy Pattern）](/DesignPattern/Strategy/Strategy.md)
+- [ ] [模板模式（Template Pattern）](/DesignPattern/TemplateMethod/TemplateMethod.md)
+- [ ] [访问者模式（Visitor Pattern）](/DesignPattern/Visitor/Visitor.md)
+- [ ] [空对象模式（Null Object pattern）](/DesignPattern/NullObject/NullObject.md)
+
+## 软件设计的设计原则
+
+目的：降低对象之间的耦合，增加程序的可复用性、可扩展性和可维护性。
 
 ### 开闭原则（Open Close Principle）
 
@@ -124,56 +157,8 @@
 
 如果要使用继承关系，则必须严格遵循里氏替换原则。合成复用原则同里氏替换原则相辅相成的，两者都是开闭原则的具体实现规范。
 
-## 设计模式的类型
-
-创建型模式
-
-- [简单工厂模式（Simple Factory Pattern）](/DesignPattern/SimpleFactory/SimpleFactory.md)
-- 工厂方法模式（Factory Method Pattern）
-- 抽象工厂模式（Abstract Factory Pattern）
-- 建造者模式（Builder Pattern）
-- 单例模式（Singleton Pattern）
-- 原型模式（Prototype Pattern）
-
-行为型模式
-
-- 命令模式（Command Pattern）
-- 中介者模式（Mediator Pattern）
-- 观察者模式（Observer Pattern）
-- 状态模式（State Pattern）
-- [策略模式（Strategy Pattern）](/DesignPattern/Strategy/Strategy.md)
-- 职责链模式（Chain of Responsibility Pattern）
-- 解释器模式（Interpreter Pattern）
-- 迭代器模式（Iterator Pattern）
-- 备忘录模式（Memento Pattern）
-- 模板方法模式（Template Method Pattern）
-- 访问者模式（Visitor Pattern）
-- 空对象模式（Null Object Pattern）
-
-结构型模式
-
-- 适配器模式（Adapter Pattern）
-- 桥接模式（Bridge Pattern）
-- [装饰模式（Decorator Pattern）](/DesignPattern/Decorator/Decorator.md)
-- 外观模式（Facade Pattern）
-- 享元模式（Flyweight Pattern）
-- 代理模式（Proxy Pattern）
-- 组合模式（Composite Pattern）
-
-J2EE 模式
-
-- MVC 模式（MVC Pattern）
-- 业务代表模式（Business Delegate Pattern）
-- 组合实体模式（Composite Entity Pattern）
-- 数据访问对象模式（Data Access Object Pattern）
-- 前端控制器模式（Front Controller Pattern）
-- 拦截过滤器模式（Intercepting Filter Pattern）
-- 服务定位器模式（Service Locator Pattern）
-- 传输对象模式（Transfer Object Pattern）
-
 ## 资料
 
 - [CS-Notes - 设计模式](https://cyc2018.github.io/CS-Notes/#/notes/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F)
 - [图说设计模式](https://design-patterns.readthedocs.io/zh_CN/latest/index.html)
 - [Java设计模式：23种设计模式全面解析（超级详细）](http://c.biancheng.net/design_pattern/)
-- [设计模式 | 菜鸟教程](https://www.runoob.com/design-pattern/design-pattern-intro.html)
