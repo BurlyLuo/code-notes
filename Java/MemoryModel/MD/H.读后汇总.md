@@ -151,4 +151,3 @@ A：使用 Java 提供的同步原语、锁等，正确同步多线程程序。
 遗留的一些疑问，后续自己解疑：
 
 - [JSR-133 是什么？为什么要提出 JSR-133 这个规范提案？](https://jcp.org/en/jsr/detail?id=133)
-- [最新的 Java 内存模型来源于 JSR-133，其他的 JSR 提案是什么？](/MD/idea/Java/JSR规范概况一览.md)

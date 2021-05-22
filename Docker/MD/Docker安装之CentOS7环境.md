@@ -1,8 +1,23 @@
-# Docker安装（CentOS7环境）
+# Docker安装之CentOS7环境
+
+- [Docker安装之CentOS7环境](#docker安装之centos7环境)
+  - [资料](#资料)
+  - [Docker网络拓扑图](#docker网络拓扑图)
+  - [安装Docker](#安装docker)
+  - [Docker升级至最新稳定版本](#docker升级至最新稳定版本)
+  - [Docker镜像加速](#docker镜像加速)
+    - [配置国内Docker镜像服务地址](#配置国内docker镜像服务地址)
+  - [其他命令](#其他命令)
+
+## 资料
+
+- 官方安装教程之CentOS：[官方教程](https://docs.docker.com/engine/install/centos/)
+
+## Docker网络拓扑图
 
 ![docker](/Docker/IMG/000.png)
 
-## 一、安装Docker
+## 安装Docker
 
 1、Docker 要求 CentOS 系统的内核版本高于 3.10 ，查看本页面的前提条件来验证你的 CentOS 版本是否支持 Docker 。
 
@@ -76,7 +91,7 @@ docker run hello-world
 
 此命令下载测试图像并在容器中运行。容器运行时，它会打印参考消息并退出。
 
-## 二、Docker升级至最新稳定版本
+## Docker升级至最新稳定版本
 
 1、卸载旧版本
 
@@ -111,7 +126,7 @@ sudo yum-config-manager \
 
 4、后续重复安装步骤即可
 
-## 三、Docker镜像加速
+## Docker镜像加速
 
 ### 配置国内Docker镜像服务地址
 
@@ -149,15 +164,7 @@ sudo systemctl restart docker
 }
 ```
 
-### 第三方镜像加速
-
-使用国内的 docker 镜像构建服务，来构建一个私有镜像。
-
-比如阿里云容器镜像服务中，创建镜像仓库，并勾选`海外构建`，构建成后，按照当前镜像中的基本信息中的代码进行 pull 到本地。
-
-## 其他
-
-`systemctl`命令是系统服务管理器指令。
+## 其他命令
 
 启动docker：
 
@@ -201,7 +208,4 @@ docker info
 docker ‐‐help
 ```
 
-## 四、资料
-
-- 官方CentOS安装教程：[官方教程](https://docs.docker.com/install/linux/docker-ce/centos/)
-- docker中文：[Docker资源](http://www.docker.org.cn/page/resources.html)
+ps：`systemctl`命令是系统服务管理器指令。

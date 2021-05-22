@@ -1,4 +1,4 @@
-# MySQL异常：The server time zone value '�й���׼ʱ��' is unrecognized or represents more than one time zone
+# MySQL异常：The server time zone value 'xxx' is unrecognized or represents more than one time zone
 
 ## 问题描述
 

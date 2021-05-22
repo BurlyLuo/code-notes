@@ -1,8 +1,23 @@
 # Docker部署Redis
 
-官方Docker hub中的redis镜像地址：[redis镜像](https://hub.docker.com/_/redis)
+- [Docker部署Redis](#docker部署redis)
+  - [资料](#资料)
+  - [拉取镜像](#拉取镜像)
+  - [运行容器](#运行容器)
+    - [容器指定自定义网段的固定IP/静态IP地址](#容器指定自定义网段的固定ip静态ip地址)
+    - [获取并修改redis配置文件](#获取并修改redis配置文件)
+    - [启动redis容器](#启动redis容器)
+  - [部署redis主从模式](#部署redis主从模式)
+    - [运行主从容器](#运行主从容器)
+    - [主从添加哨兵](#主从添加哨兵)
+  - [部署redis集群模式](#部署redis集群模式)
+  - [参考](#参考)
 
-## 下载镜像
+## 资料
+
+官方Docker hub中的redis镜像地址：[redis](https://hub.docker.com/_/redis)
+
+## 拉取镜像
 
 下载 redis 5.0.6 版本的镜像：
 
@@ -12,7 +27,7 @@ docker pull redis:5.0.6-alpine3.10
 
 ## 运行容器
 
-0.为Docker容器指定自定义网段的固定IP/静态IP地址
+### 容器指定自定义网段的固定IP/静态IP地址
 
 第一步：创建自定义网络
 备注：这里选取了172.172.0.0网段，也可以指定其他任意空闲的网段
@@ -43,7 +58,7 @@ iptables -t nat -I POSTROUTING -o eth0 -d  0.0.0.0/0 -s 172.18.0.10  -j SNAT --t
 docker network create --subnet=172.172.0.0/16 subnet-redis
 ```
 
-1.获取并修改redis配置文件
+### 获取并修改redis配置文件
 
 redis官方提供了一个配置文件样例，通过wget工具下载下来。
 
@@ -80,7 +95,7 @@ logfile "redis.log"
 appendonly yes
 ```
 
-2.启动redis容器
+### 启动redis容器
 
 ```bash
 cd ~
@@ -115,7 +130,9 @@ PONG
 127.0.0.1:6379> auth password
 ```
 
-## 主从配置
+## 部署redis主从模式
+
+### 运行主从容器
 
 1.新建master和slave角色的redis配置文件
 
@@ -222,7 +239,7 @@ redis-cli
 
 主从配置成功。
 
-## 主从添加哨兵
+### 主从添加哨兵
 
 Redis-Sentinel是官方推荐的高可用（HA）解决方案，本身也是一个独立运行的进程。redis的sentinel系统用于管理多个redis服务器实例（instance）。
 哨兵适用于非集群结构的redis环境，比如：redis主从环境。在redis集群中，节点担当了哨兵的功能，所以redis集群不需要考虑sentinel。
@@ -376,9 +393,11 @@ repl_backlog_first_byte_offset:1
 repl_backlog_histlen:319085
 ```
 
-## redis集群配置
+## 部署redis集群模式
 
 官方文档：[Redis集群教程](https://redis.io/topics/cluster-tutorial)
+
+注意：`10.255.20.23`这个IP是个人测试部署Redis集群的服务器内网IP，请根据实际情况自行修改。
 
 1.在redis目录新建`redis-cluster`文件夹，创建 `redis-cluster.tmpl` 文件：
 
@@ -417,6 +436,8 @@ requirepass password
 - appendonly yes（开启aof）
 - masterauth（设置集群节点间访问密码，跟下面一致）
 - requirepass（设置redis访问密码）
+
+每个实例还包含该节点的配置存储位置的文件路径，默认情况下为nodes.conf。该文件永远不会被人触及。它仅在启动时由Redis Cluster实例生成，并在需要时进行更新。
 
 2.在redis-cluster下生成conf和data目标，并生成配置信息：
 
@@ -485,12 +506,6 @@ redis-cli -a password --cluster check 10.255.20.23:7001
 ```
 
 验证成功。
-
-7.集群能被外网访问。
-
-方式一（不行）：修改data/nodes.conf文件中的ip地址为公网地址。经测试，不行，redis连的上，但库连不上。
-
-所以采用的方式是：将上述部署redis集群的IP从内网IP修改为公网IP。
 
 ## 参考
 

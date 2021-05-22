@@ -33,7 +33,6 @@ git config --global --unset https.proxy
 git config --global http.https://github.com.proxy socks5://127.0.0.1:10808
 git config --global https.https://github.com.proxy socks5://127.0.0.1:10808
 #clash
-
 git config --global http.https://github.com.proxy http://127.0.0.1:7890
 git config --global https.https://github.com.proxy http://127.0.0.1:7890
 ```

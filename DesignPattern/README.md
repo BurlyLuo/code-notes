@@ -1,6 +1,21 @@
 # 设计模式
 
-[TOC]
+- [设计模式](#设计模式)
+  - [设计模式概述](#设计模式概述)
+  - [软件设计模式的产生背景](#软件设计模式的产生背景)
+  - [设计模式的分类](#设计模式的分类)
+    - [根据目的分类](#根据目的分类)
+    - [根据作用范围分类](#根据作用范围分类)
+  - [设计模式列表](#设计模式列表)
+  - [软件设计的设计原则](#软件设计的设计原则)
+    - [开闭原则（Open Close Principle）](#开闭原则open-close-principle)
+    - [里氏代换原则（Liskov Substitution Principle）](#里氏代换原则liskov-substitution-principle)
+    - [依赖倒转原则（Dependence Inversion Principle）](#依赖倒转原则dependence-inversion-principle)
+    - [单一职责原则（Single Responsibility Principle）](#单一职责原则single-responsibility-principle)
+    - [接口隔离原则（Interface Segregation Principle）](#接口隔离原则interface-segregation-principle)
+    - [迪米特法则，又称最少知识原则（Demeter Principle）](#迪米特法则又称最少知识原则demeter-principle)
+    - [合成复用原则（Composite Reuse Principle）](#合成复用原则composite-reuse-principle)
+  - [资料](#资料)
 
 ## 设计模式概述
 
