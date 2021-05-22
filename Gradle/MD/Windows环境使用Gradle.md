@@ -1,6 +1,6 @@
 # Windows环境使用Gradle
 
-Gradle官网:[官网](https://gradle.org/)
+Gradle官网：[gradle.org](https://gradle.org/)
 
 ## 介绍
 
@@ -20,21 +20,21 @@ Gradle是一个基于JVM的构建工具，是一款通用灵活的构建工具�
 - gradle的整体设计是以作为一种语言为导向的，而非成为一个严格死板的框架。
 - 免费开源
 
-##　安装及环境配置
+## 安装及环境配置
 
-Gradle下载地址:[下载地址](https://services.gradle.org/distributions/)
+Gradle下载地址：[下载地址](https://services.gradle.org/distributions/)
 
-选择对应的版本下载即可,这里我选择的是`gradle-6.5.1-bin.zip`
+选择对应的版本下载即可，这里我选择的是`gradle-6.5.1-bin.zip`
 
 下载后解压到你想要的目录即可，然后新建系统环境`GRADLE_HOME`再找到path变量，后面添加`%GRADLE_HOME%\bin`。
 
-![示例](../../IMG/gradle/001.png)
+![示例](../IMG/001.png)
 
-![示例](../../IMG/gradle/002.png)
+![示例](../IMG/002.png)
 
 命令行中输入`gradle -v`，正常输出版本信息，则配置成功
 
-![示例](../../IMG/gradle/002.png)
+![示例](../IMG/002.png)
 
 ## 构建命令
 
@@ -148,7 +148,7 @@ allprojects {
 }
 ```
 
-### 移除jcenter,用其他源替代，简单粗暴
+### 移除jcenter，用其他源替代
 
 ```groovy
 allprojects{
