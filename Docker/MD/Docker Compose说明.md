@@ -29,10 +29,10 @@ docker-compose 是一个用来把 docker 自动化的东西。有了 docker-comp
 
 用通俗的语言来说，我们平时操作 docker 还是很原始的一系列动作，你手动使用 docker 的动作可以拆分成
 
-* 找到一个系统镜像 // docker search
-* 安装好 vm 或者 virtual box // apt-get install docker
-* 在 vm 中安装镜像 // docker run -d -it 你的镜像
-* 略..
+- 找到一个系统镜像 // docker search
+- 安装好 vm 或者 virtual box // apt-get install docker
+- 在 vm 中安装镜像 // docker run -d -it 你的镜像
+- 略..
 
 这是最小的动作， 如果你要映射硬盘，设置nat网络或者桥接网络，等等…你就要做更多的 docker 操作， 这显然是非常没有效率的。
 
@@ -108,6 +108,8 @@ To verify a successful Docker Compose installation, run:
 ```bash
 docker-compose version
 ```
+
+windows系统则可以使用官方GitHub仓库中发布的安装文件进行安装。
 
 ## 升级
 
