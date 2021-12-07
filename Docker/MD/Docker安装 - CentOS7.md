@@ -1,6 +1,6 @@
-# Docker安装之CentOS7环境
+# Docker安装 - CentOS7
 
-- [Docker安装之CentOS7环境](#docker安装之centos7环境)
+- [Docker安装 - CentOS7](#docker安装---centos7)
   - [资料](#资料)
   - [Docker网络拓扑图](#docker网络拓扑图)
   - [安装Docker](#安装docker)
@@ -15,7 +15,7 @@
 
 ## Docker网络拓扑图
 
-![docker](/Docker/IMG/000.png)
+![docker](../IMG/000.png)
 
 ## 安装Docker
 

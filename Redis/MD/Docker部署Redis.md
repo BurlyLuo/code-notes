@@ -212,7 +212,7 @@ repl_backlog_first_byte_offset:1
 repl_backlog_histlen:266
 ```
 
-![示例](/Docker/IMG/003.png)
+![示例](../IMG/001.png)
 
 可以看到主从已经配置成功。
 
@@ -235,7 +235,7 @@ redis-cli
 "hello-world"
 ```
 
-![示例](/Docker/IMG/004.png)
+![示例](../IMG/002.png)
 
 主从配置成功。
 

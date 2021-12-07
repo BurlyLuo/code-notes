@@ -67,7 +67,7 @@ docker 镜像可以理解为，你在 win 下用 ghost 拷贝出来的磁盘镜�
 
 ## Docker命令结构图
 
-![Docker命令结构图](/Docker/IMG/001.png)
+![Docker命令结构图](../IMG/001.png)
 
 ## Docker环境信息
 

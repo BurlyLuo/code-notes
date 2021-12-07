@@ -388,7 +388,7 @@ sudo systemctl restart docker
 
 这里验证下连接，使用IDEA中的Docker插件进行验证，直接配置链接显示连接失败
 
-![example](/Docker/IMG/019.png)
+![example](../IMG/013.png)
 
 显然是无法连接了，此时我们需要去拿到之前Docker主机上创建TLS文件
 
@@ -400,7 +400,7 @@ key.pem
 
 拉取这四个证书文件至本地文件夹，这个文件夹将用于在idea指定，需要说的是，TCP 里的链接需要改成 Https 格式。
 
-![example](/Docker/IMG/020.png)
+![example](../IMG/014.png)
 
 连接成功。
 
@@ -414,7 +414,7 @@ key.pem
 docker --tlsverify --tlscacert=/opt/docker/ca/ca.pem --tlscert=/opt/docker/ca/cert.pem --tlskey=/opt/docker/ca/key.pem -H=$HOST:2376 version
 ```
 
-![example](/Docker/IMG/021.png)
+![example](../IMG/015.png)
 
 将version换成其他即可如在本机一样控制远程docker。
 

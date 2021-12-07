@@ -99,7 +99,7 @@ public class VolatileExample {
 
 上述 happens-before 关系的图形化表现形式如下：
 
-![示例图](/Java/MemoryModel/IMG/19.png)
+![示例图](../IMG/19.png)
 
 在上图中，每个箭头链接的两个节点，代表了一个 happens-before 关系。黑色箭头表示程序顺序规则；橙色箭头表示 volatile 规则；蓝色箭头表示组合这些规则后提供的 happens-before 保证。
 
@@ -115,7 +115,7 @@ volatile 写的内存语义如下：
 
 以上面示例程序 VolatileExample 为例，假设线程 A 首先执行 writer() 方法，随后线程 B 执行 reader() 方法，初始时两个线程的本地内存中的 flag 和 a 都是初始状态。下图是线程 A 执行 volatile 后，共享变量的状态示意图：
 
-![示例图](/Java/MemoryModel/IMG/20.png)
+![示例图](../IMG/20.png)
 
 如上图所示，线程 A 在写 flag 变量后，本地内存 A 中被线程 A 更新过的两个共享变量的值被刷新到主内存中。此时，本地内存 A 和主内存中共享变量的值是一致的。
 
@@ -125,7 +125,7 @@ volatile 读的内存语义如下：
 
 下面是线程 B 读同一个 volatile 变量后，共享变量的状态示意图：
 
-![示例图](/Java/MemoryModel/IMG/21.png)
+![示例图](../IMG/21.png)
 
 如上图所示，在读 flag 变量后，本地内存 B 包含的值已经被置为无效。此时，线程 B 必须从主内存中读取共享变量。线程 B 的读取操作将导致本地内存 B 与主内存中的共享变量的值也变成一致的了。
 
@@ -143,7 +143,7 @@ volatile 读的内存语义如下：
 
 前文我们提到过重排序分为编译器重排序和处理器重排序。为了实现 volatile 内存语义，JMM 会分别限制这两种类型的重排序类型。下面是 JMM 针对编译器制定的 volatile 重排序规则表：
 
-![示例图](/Java/MemoryModel/IMG/22.png)
+![示例图](../IMG/22.png)
 
 举例来说，第三行最后一个单元格的意思是：在程序顺序中，当第一个操作为普通变量的读或写时，如果第二个操作为 volatile 写，则编译器不能重排序这两个操作。
 
@@ -164,7 +164,7 @@ volatile 读的内存语义如下：
 
 下面是保守策略下，volatile 写插入内存屏障后生成的指令序列示意图：
 
-![示例图](/Java/MemoryModel/IMG/23.png)
+![示例图](../IMG/23.png)
 
 上图中的 StoreStore 屏障可以保证在 volatile 写之前，其前面的所有普通写操作已经对任意处理器可见了。这是因为 StoreStore 屏障将保障上面所有的普通写在 volatile 写之前刷新到主内存。
 
@@ -172,7 +172,7 @@ volatile 读的内存语义如下：
 
 下面是在保守策略下，volatile 读插入内存屏障后生成的指令序列示意图：
 
-![示例图](/Java/MemoryModel/IMG/24.png)
+![示例图](../IMG/24.png)
 
 上图中的 LoadLoad 屏障用来禁止处理器把上面的 volatile 读与下面的普通读重排序。LoadStore 屏障用来禁止处理器把上面的volatile 读与下面的普通写重排序。
 
@@ -200,7 +200,7 @@ class VolatileBarrierExample {
 
 针对 readAndWrite() 方法，编译器在生成字节码时可以做如下优化：
 
-![示例图](/Java/MemoryModel/IMG/25.png)
+![示例图](../IMG/25.png)
 
 注意，最后的 StoreLoad 屏障不能省略。因为第二个 volatile 写之后，方法立即 return。此时编译器可能无法准确断定后面是否会有 volatile 读或写，为了安全起见，编译器通常会在这里插入一个 StoreLoad 屏障。
 
@@ -208,7 +208,7 @@ class VolatileBarrierExample {
 
 前面保守策略下的 volatile 读和写，在 x86 处理器平台可以优化成：
 
-![示例图](/Java/MemoryModel/IMG/26.png)
+![示例图](../IMG/26.png)
 
 前文提到过，x86 处理器仅会对写-读操作做重排序。x86 不会对读-读、读-写和写-写操作做重排序，因此在 x86 处理器中会省略掉这三种操作类型对应的内存屏障。在 x86 中，JMM 仅需在 volatile 写后面插入一个 StoreLoad 屏障即可正确实现 volatile 写-读的内存语义。这意味着在 x86 处理器中，volatile 写的开销比 volatile 读的开销会大很多（因为执行 StoreLoad 屏障开销会比较大）。
 
@@ -216,7 +216,7 @@ class VolatileBarrierExample {
 
 在 JSR-133 之前的旧 Java 内存模型中，虽然不允许 volatile 变量之间重排序，但旧的 Java 内存模型允许 volatile 变量与普通变量重排序。在旧的内存模型中，VolatileExample 示例程序可能被重排序成下列时序来执行：
 
-![示例图](/Java/MemoryModel/IMG/27.png)
+![示例图](../IMG/27.png)
 
 在旧的内存模型中，当1和2之间没有数据依赖关系时，1和2之间就可能被重排序（3和4类似）。其结果就是：读线程 B 执行4时，不一定能看到写线程 A 在执行1时对共享变量的修改。
 

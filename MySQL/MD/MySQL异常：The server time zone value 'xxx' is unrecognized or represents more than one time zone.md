@@ -63,7 +63,7 @@ UTC与GMT基本上等同，误差不超过0.9秒。
 
 通过`mysql-connector-java`源码中`com.mysql.cj.util.TimeUtil`类的`TIME_ZONE_MAPPINGS_RESOURCE`属性，可以看到serverTimezone支持的相关设置在`/com/mysql/cj/util/TimeZoneMapping.properties` 文件中。
 
-![示例](/MySQL/IMG/001.png)
+![示例](../IMG/001.png)
 
 找到`/com/mysql/cj/util/TimeZoneMapping.properties`文件，其中支持的时区内容如下：
 

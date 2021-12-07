@@ -48,7 +48,7 @@ done 2>/dev/null | sort -nr | head -n 40
 
 此脚本输出得分最高的 40 个进程，并进行了排序：
 
-![example](/Docker/IMG/014.png)
+![example](../IMG/008.png)
 
 第一列显示进程的得分，红框中的是 docker daemon 进程，非常的靠后。
 
@@ -453,7 +453,7 @@ dd if=/dev/zero of=test.out bs=1M count=100 oflag=direct
 
 因为/dev/zero是一个伪设备，它只产生空字符流，对它不会产生IO，所以，IO都会集中在of文件中，of文件只用于写，所以这个命令相当于测试磁盘的写能力。命令结尾添加oflag=direct将跳过内存缓存，添加oflag=sync将跳过hdd缓存。
 
-![example](/Docker/IMG/017.png)
+![example](../IMG/011.png)
 
 命令执行完成后查看，结果表明，峰值大概限制在 30 MB/s 左右。
 
@@ -465,7 +465,7 @@ docker run -it ubuntu
 
 结果如下：
 
-![example](/Docker/IMG/018.png)
+![example](../IMG/012.png)
 
 ## 启动一个压力测试容器并限制资源
 
@@ -509,7 +509,7 @@ docker run -it -d -m 300M --cpus=2 --memory-swap -1 --name os1 u-stress
 docker stats os1
 ```
 
-![example](/Docker/IMG/015.png)
+![example](../IMG/009.png)
 
 3.stress压测
 
@@ -527,7 +527,7 @@ stress -m 500m --vm 1
 
 再查看容器运行状态，可以os1容器的内存和cpu都得到了限制，即使给压测时超出了最大内存，也不会额外占用资源
 
-![example](/Docker/IMG/016.png)
+![example](../IMG/010.png)
 
 附：Stress参数说明
 

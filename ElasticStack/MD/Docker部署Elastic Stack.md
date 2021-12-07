@@ -1,6 +1,12 @@
 # Docker部署Elastic Stack
 
+## 资料
+
 官方镜像地址：[Docker @ Elastic](https://www.docker.elastic.co/#)
+
+第三方整合dockerhub仓库地址：[sebp/elk](https://hub.docker.com/r/sebp/elk/)
+
+第三方整合文档：https://elk-docker.readthedocs.io/
 
 Github上别人整理的一套使用docker compose来部署elk的配置：[docker-elk](https://github.com/deviantony/docker-elk)
 
@@ -18,9 +24,9 @@ ELK分别为：
 
 这个产品被官方称之为：[Elastic Stack](https://www.elastic.co/cn/products/elastic-stack)
 
-![Elastic Stack](/Docker/IMG/006.png)
+![Elastic Stack](../IMG/001.png)
 
-![示例](/Docker/IMG/007.png)
+![示例](../IMG/002.png)
 
 ---
 
@@ -50,11 +56,64 @@ beats是一组轻量级采集程序的统称，这些采集程序包括并不限
 
 ## 拉取镜像
 
-## 创建目录
+```bash
+docker pull sebp/elk
+```
 
 ## 启动运行
 
-## 参考
+```bash
+docker run -p 5601:5601 -p 9200:9200 -p 5044:5044 -it -d --name elk sebp/elk
+```
 
-- [ELK和beats](https://www.jianshu.com/p/9c26bd9f6ebd)
-- [使用Docker来搭建一套ELK日志分析系统](https://www.cnblogs.com/spec-dog/p/11489838.html)
+注意：分配给docker的内存需要大于4G
+
+修改logstash关闭ssl
+
+```bash
+ 1、进入elk容器
+docker exec -it xxxxx(elk容器的ID) /bin/bash
+ 2、修改配置文件 改为如下
+vi /etc/logstash/conf.d/02-beats-input.conf
+
+input {
+  beats {
+    port => 5044
+    ssl => true
+    ssl_certificate => "/etc/pki/tls/certs/logstash-beats.crt"
+    ssl_key => "/etc/pki/tls/private/logstash-beats.key"
+  }
+}
+
+变更为
+
+input {
+  beats {
+    port => 5044
+    #把这里原本的用于正式的配置项删除
+  }
+}
+```
+
+修改后，重启
+
+## 访问
+
+kibana访问地址: http://127.0.0.1:5601/
+elasticsearch访问地址: http://127.0.0.1:9200
+
+## kibana汉化
+
+```bash
+docker exec -it <kibana_container_id> /bin/bash
+
+find / -name kibana.yml
+
+vim /opt/kibana/config/kibana.yml
+```
+
+末尾添加
+
+```text
+i18n.locale: "zh-CN"
+```

@@ -37,17 +37,17 @@ docker run -d -it --restart always\
 
 1.设置admin密码:
 
-![示例](/Docker/IMG/008.png)
+![示例](../IMG/002.png)
 
 2.选择本地模式，当然也可以根据响应情况选择：
 
-![示例](/Docker/IMG/009.png)
+![示例](../IMG/003.png)
 
 这里看到为什么启动命令中包含`-v /var/run/docker.sock:/var/run/docker.sock`，原因就是本地模式需要指定这个参数。
 
 安装配置完成，可以使用了：
 
-![示例](/Docker/IMG/010.png)
+![示例](../IMG/004.png)
 
 ## 参考
 

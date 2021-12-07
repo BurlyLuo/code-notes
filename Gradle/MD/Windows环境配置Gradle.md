@@ -1,4 +1,4 @@
-# Windows环境使用Gradle
+# Windows环境配置Gradle
 
 Gradle官网：[gradle.org](https://gradle.org/)
 

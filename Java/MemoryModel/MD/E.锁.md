@@ -35,7 +35,7 @@ public class MonitorExample {
 
 上述 happens-before 关系的图形化表现形式如下：
 
-![示例图](/Java/MemoryModel/IMG/28.png)
+![示例图](../IMG/28.png)
 
 在上图中，每一个箭头链接的两个节点，代表了一个 happens-before 关系。黑色箭头表示程序顺序规则；橙色箭头表示监视器锁规则；蓝色箭头表示组合这些规则后提供的 happens-before 保证。
 
@@ -45,11 +45,11 @@ public class MonitorExample {
 
 当线程释放锁时，JMM 会把该线程对应的本地内存中的共享变量刷新到主内存中。以上面的 MonitorExample 程序为例，线程 A 释放锁后，共享数据的状态示意图如下：
 
-![示例图](/Java/MemoryModel/IMG/29.png)
+![示例图](../IMG/29.png)
 
 当线程获取锁时，JMM 会把该线程对应的本地内存置为无效。从而使得被监视器保护的临界区代码必须要从主内存中去读取共享变量。下面是锁获取的状态示意图：
 
-![示例图](/Java/MemoryModel/IMG/30.png)
+![示例图](../IMG/30.png)
 
 对比锁释放-获取的内存语义与 volatile 写-读的内存语义，可以看出：锁释放与 volatile 写有相同的内存语义；锁获取与 volatile 读有相同的内存语义。
 
@@ -99,7 +99,7 @@ ReentrantLock 的实现依赖于 Java 同步器框架 AbstractQueuedSynchronizer
 
 下面是 ReentrantLock 的类图（仅画出与本文相关的部分）：
 
-![示例图](/Java/MemoryModel/IMG/31.png)
+![示例图](../IMG/31.png)
 
 ReentrantLock 分为公平锁和非公平锁，我们首先会分析公平锁。
 
@@ -284,4 +284,4 @@ Java 的 CAS 会使用现代处理器上提供的高效机器级别原子指令�
 
 AQS，非阻塞数据结构和原子变量类（java.util.concurrent.atomic 包中的类），这些 concurrent 包中的基础类都是使用这种模式来实现的。从整体来看，concurrent 包的实现示意图如下：
 
-![示例图](/Java/MemoryModel/IMG/32.png)
+![示例图](../IMG/32.png)

@@ -90,7 +90,7 @@ http://mirror.esuni.jp/jenkins/updates/update-center.json
 
 安装完成后，重启，在 `Jenkins - Manage Jenkins - Configure System` 中搜索 `Locale` ，将 Default Language 设置为 ： zh_CN
 
-![示例](/Docker/IMG/005.png)
+![示例](../IMG/001.png)
 
 设置完成，点击 Apply 和 Save 后重启即可。
 

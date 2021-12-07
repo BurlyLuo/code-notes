@@ -50,7 +50,9 @@ docker-compose up -d
 
 **方式一**：[官方-二级制文件安装](https://docs.docker.com/compose/install/)
 
-![示例](/Docker/IMG/012.png)
+![示例](../IMG/006.png)
+
+![示例](../IMG/007.png)
 
 安装 Docker Compose 可以通过下面命令自动下载适应版本的 Compose，并为安装脚本添加执行权限：
 
@@ -863,5 +865,5 @@ docker-compose rm nginx
 
 ## 参考
 
-* [不正宗 docker 入门教程-使用 docker-compose](https://segmentfault.com/a/1190000015706722)
-* [Docker：Docker Compose 详解](https://www.jianshu.com/p/658911a8cff3)
+- [不正宗 docker 入门教程-使用 docker-compose](https://segmentfault.com/a/1190000015706722)
+- [Docker：Docker Compose 详解](https://www.jianshu.com/p/658911a8cff3)

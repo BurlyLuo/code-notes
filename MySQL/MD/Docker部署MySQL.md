@@ -210,7 +210,7 @@ docker run --restart=always -it -d -p 3307:3306 --name docker_mysql_8.0.18_slave
 
 6.主库上，执行查询sql: SHOW MASTER STATUS ，保留查询出的信息，例：这里我查询出的信息如下：
 
-![示例](/Docker/IMG/002.png)
+![示例](../IMG/002.png)
 
 7.从库上，执行查询sql: STOP SLAVE ，停止slave。
 

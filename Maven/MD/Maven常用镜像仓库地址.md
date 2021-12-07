@@ -1,4 +1,4 @@
-# Maven常用的镜像仓库地址配置
+# Maven常用镜像仓库地址
 
 ```xml
     <mirror>
